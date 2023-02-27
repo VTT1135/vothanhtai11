@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .khung{
+            text-align: center;
+            width: 720px;
+            height: 350px;
+            float: left;
+            padding-top: 100px;
+        }
+        .khung{
+            background-color: aliceblue;
+        }
+        .khung{
+            cursor: pointer;
+        }
+        .khung:hover{
+            color: aqua;
+            background: gray;
+        }
+        nav{
+            padding-top: 20px;
+            padding-left: 70px;
+        }
+        input{
+            border-radius: 5px;
+            background: none;
+            padding: .5rem;
+            font-size: 1rem;
+            transform: 150ms cubic-bezier(.4, 0, .2, 1);
+        }
+        input{
+            cursor: pointer;
+        }
+        input:hover{
+            background: aqua;
+        }
+        input::placeholder{
+            color: black;
+        }
+      button{
+        border: black;
+        cursor: pointer;
+        padding: .3rem;
+      }
+      button{
+        background: rgba(0, 0, 0, 0);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0);
+            backdrop-filter: blur(17px);
+            -webkit-backdrop-filter: blur(17px);
+            border-radius: 8px;
+            border: solid 2px black;
+            width: 70px;
+      }
+      button:hover{
+        background: aqua;
+      }
+    </style>
+</head>
+<body>
+    <nav>
+    <div class="khung">
+        <H1>SIGN IN</H1>
+        <form>
+            <div class="name">
+            <center>
+            <input type="text" required placeholder="Username"/>
+            </center>
+            </div>
+            <br>
+            <div class="pass">
+            <center>
+            <input type="password" required placeholder="Password"/>
+            </center>
+            <br>
+            </div>
+            <div>
+                <button type="submit"><h1>➪</h1></button>
+            </div>
+        </form>
+    </div>
+</nav>
+</body>
+</html>

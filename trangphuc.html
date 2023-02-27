@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: antiquewhite;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 1520px;
+    }
+    .card{
+        overflow: hidden;
+        flex-grow: 1;
+        display: grid;
+        place-items: center;
+        align-items: flex-start;
+        color: #fff;
+        height: 300px;
+        aspect-ratio: 0.5;
+        transition: all 0.6s ease-in-out;
+        padding: 1rem;
+        cursor: pointer;
+    }
+    .card img{
+        border-radius: 1rem;
+        grid-column: 1;
+        grid-row: 1 / span 5;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .content{
+        grid-row: 2;
+        grid-column: 1;
+        opacity: 0;
+        width: 90%;
+        transform: translateY(100px);
+        grid-column: 1;
+        transition: all 0.5s ease-in-out;
+        transition-delay: 0.2s;
+    }
+    .card:hover{
+        flex-grow: 3;
+    }
+    .card:hover .content{
+        opacity: 1;
+        transform: translateX(0);
+    }
+</style>
+<body>
+    <section class="container">
+    <div class="card">
+            <img src="tp11.jpg">
+        <div class="content">
+            <h2>Darius Lang Vương</h2>
+            <p>1820 RP</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="tp22.jpg">
+    <div class="content">
+        <h2>Yasuo Ma Kiếm</h2>
+        <p>1820 RP</p>
+    </div>
+</div>
+<div class="card">
+    <img src="tp33.jpg">
+<div class="content">
+    <h2>Jax Thần Trượng</h2>
+    <p>1350 RP</p>
+</div>
+</div>
+<div class="card">
+    <img src="tp44.jpg">
+<div class="content">
+    <h2>Leesin Tuyệt vô thần</h2>
+    <p>1350 RP</p>
+</div>
+</div>
+<div class="card">
+    <img src="tp55.jpg">
+<div class="content">
+    <h2>Kayn Tử thần không gian</h2>
+    <p>1850 RP</p>
+</div>
+</div>
+    </section>
+   <h1> Ngày ra mắt: 28/02/2023</h1>
+</body>
+</html>
